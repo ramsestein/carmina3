@@ -1,0 +1,1087 @@
+{
+  "model": "bsc-bio-ehr-es-carmen-anon",
+  "test_directory": "docs/test",
+  "reference_file": "docs/test/entities_test.jsonl",
+  "total_files_available": 3619,
+  "total_files_processed": 50,
+  "files_selection": "random_50",
+  "model_load_time_seconds": 0.29653501510620117,
+  "processing_time_seconds": 133.62096667289734,
+  "total_time_seconds": 133.91750168800354,
+  "metrics": {
+    "strict": {
+      "precision": 0.21327967806841047,
+      "recall": 0.451338199513382,
+      "f1": 0.28967401912941637,
+      "true_positives": 1484,
+      "false_positives": 5474,
+      "false_negatives": 1804,
+      "average_precision_per_file": 0.3425272661971502,
+      "average_recall_per_file": 0.5051980255551083,
+      "average_f1_per_file": 0.3933363538291718
+    },
+    "relaxed": {
+      "precision": 0.4461494335293274,
+      "recall": 0.8709406494960806,
+      "f1": 0.5900426742532006,
+      "true_positives": 3111,
+      "false_positives": 3862,
+      "false_negatives": 461,
+      "average_precision_per_file": 0.53509012891542,
+      "average_recall_per_file": 0.8791018126111473,
+      "average_f1_per_file": 0.6425215742716773
+    }
+  },
+  "per_file_results": [
+    {
+      "filename": "NHC70420392_episodio1008251666.txt",
+      "predicted_count": 99,
+      "reference_count": 97,
+      "strict": {
+        "precision": 0.6464646464646465,
+        "recall": 0.6881720430107527,
+        "f1": 0.6666666666666667,
+        "true_positives": 64,
+        "false_positives": 35,
+        "false_negatives": 29
+      },
+      "relaxed": {
+        "precision": 0.7171717171717171,
+        "recall": 0.7319587628865979,
+        "f1": 0.7244897959183673,
+        "true_positives": 71,
+        "false_positives": 28,
+        "false_negatives": 26
+      }
+    },
+    {
+      "filename": "0000000010000000027947383 __episode_1008838607.txt",
+      "predicted_count": 451,
+      "reference_count": 167,
+      "strict": {
+        "precision": 0.1197339246119734,
+        "recall": 0.33962264150943394,
+        "f1": 0.17704918032786884,
+        "true_positives": 54,
+        "false_positives": 397,
+        "false_negatives": 105
+      },
+      "relaxed": {
+        "precision": 0.30376940133037694,
+        "recall": 0.8203592814371258,
+        "f1": 0.44336569579288027,
+        "true_positives": 137,
+        "false_positives": 314,
+        "false_negatives": 30
+      }
+    },
+    {
+      "filename": "0000000010000000016642343 __episode_1008825501.txt",
+      "predicted_count": 73,
+      "reference_count": 24,
+      "strict": {
+        "precision": 0.0684931506849315,
+        "recall": 0.21739130434782608,
+        "f1": 0.10416666666666664,
+        "true_positives": 5,
+        "false_positives": 68,
+        "false_negatives": 18
+      },
+      "relaxed": {
+        "precision": 0.3013698630136986,
+        "recall": 0.9166666666666666,
+        "f1": 0.45360824742268036,
+        "true_positives": 22,
+        "false_positives": 51,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "NHC70599973_episodio1008763975.txt",
+      "predicted_count": 3,
+      "reference_count": 3,
+      "strict": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "true_positives": 3,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "relaxed": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "true_positives": 3,
+        "false_positives": 0,
+        "false_negatives": 0
+      }
+    },
+    {
+      "filename": "0000000010000000060229907 __episode_1008834272.txt",
+      "predicted_count": 148,
+      "reference_count": 64,
+      "strict": {
+        "precision": 0.10135135135135136,
+        "recall": 0.2777777777777778,
+        "f1": 0.14851485148514854,
+        "true_positives": 15,
+        "false_positives": 133,
+        "false_negatives": 39
+      },
+      "relaxed": {
+        "precision": 0.3783783783783784,
+        "recall": 0.875,
+        "f1": 0.5283018867924528,
+        "true_positives": 56,
+        "false_positives": 92,
+        "false_negatives": 8
+      }
+    },
+    {
+      "filename": "0000000010000000059911440 __episode_1008846237.txt",
+      "predicted_count": 227,
+      "reference_count": 114,
+      "strict": {
+        "precision": 0.13215859030837004,
+        "recall": 0.3125,
+        "f1": 0.18575851393188855,
+        "true_positives": 30,
+        "false_positives": 197,
+        "false_negatives": 66
+      },
+      "relaxed": {
+        "precision": 0.43171806167400884,
+        "recall": 0.8596491228070176,
+        "f1": 0.5747800586510264,
+        "true_positives": 98,
+        "false_positives": 129,
+        "false_negatives": 16
+      }
+    },
+    {
+      "filename": "0000000010000000054726947 __episode_1008853228.txt",
+      "predicted_count": 368,
+      "reference_count": 186,
+      "strict": {
+        "precision": 0.17032967032967034,
+        "recall": 0.38509316770186336,
+        "f1": 0.2361904761904762,
+        "true_positives": 62,
+        "false_positives": 302,
+        "false_negatives": 99
+      },
+      "relaxed": {
+        "precision": 0.42391304347826086,
+        "recall": 0.8387096774193549,
+        "f1": 0.5631768953068592,
+        "true_positives": 156,
+        "false_positives": 212,
+        "false_negatives": 30
+      }
+    },
+    {
+      "filename": "0000000010000000033587706 __episode_1008785025.txt",
+      "predicted_count": 302,
+      "reference_count": 133,
+      "strict": {
+        "precision": 0.16279069767441862,
+        "recall": 0.4224137931034483,
+        "f1": 0.23501199040767387,
+        "true_positives": 49,
+        "false_positives": 252,
+        "false_negatives": 67
+      },
+      "relaxed": {
+        "precision": 0.39072847682119205,
+        "recall": 0.8872180451127819,
+        "f1": 0.542528735632184,
+        "true_positives": 118,
+        "false_positives": 184,
+        "false_negatives": 15
+      }
+    },
+    {
+      "filename": "NHC70594258_episodio1008717853.txt",
+      "predicted_count": 165,
+      "reference_count": 91,
+      "strict": {
+        "precision": 0.4727272727272727,
+        "recall": 0.896551724137931,
+        "f1": 0.6190476190476191,
+        "true_positives": 78,
+        "false_positives": 87,
+        "false_negatives": 9
+      },
+      "relaxed": {
+        "precision": 0.5333333333333333,
+        "recall": 0.967032967032967,
+        "f1": 0.6874999999999999,
+        "true_positives": 88,
+        "false_positives": 77,
+        "false_negatives": 3
+      }
+    },
+    {
+      "filename": "0000000010000000026230372 __episode_1008807756.txt",
+      "predicted_count": 223,
+      "reference_count": 120,
+      "strict": {
+        "precision": 0.15695067264573992,
+        "recall": 0.3125,
+        "f1": 0.20895522388059704,
+        "true_positives": 35,
+        "false_positives": 188,
+        "false_negatives": 77
+      },
+      "relaxed": {
+        "precision": 0.45739910313901344,
+        "recall": 0.85,
+        "f1": 0.5947521865889213,
+        "true_positives": 102,
+        "false_positives": 121,
+        "false_negatives": 18
+      }
+    },
+    {
+      "filename": "NHC70488880_episodio1008498863.txt",
+      "predicted_count": 1,
+      "reference_count": 1,
+      "strict": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "relaxed": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 0
+      }
+    },
+    {
+      "filename": "NHC70598023_episodio1008305405.txt",
+      "predicted_count": 3,
+      "reference_count": 6,
+      "strict": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "true_positives": 3,
+        "false_positives": 0,
+        "false_negatives": 3
+      },
+      "relaxed": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "true_positives": 3,
+        "false_positives": 0,
+        "false_negatives": 3
+      }
+    },
+    {
+      "filename": "NHC70252041_episodio1008397120.txt",
+      "predicted_count": 107,
+      "reference_count": 80,
+      "strict": {
+        "precision": 0.5887850467289719,
+        "recall": 0.7875,
+        "f1": 0.6737967914438502,
+        "true_positives": 63,
+        "false_positives": 44,
+        "false_negatives": 17
+      },
+      "relaxed": {
+        "precision": 0.6635514018691588,
+        "recall": 0.8875,
+        "f1": 0.7593582887700534,
+        "true_positives": 71,
+        "false_positives": 36,
+        "false_negatives": 9
+      }
+    },
+    {
+      "filename": "0000000010000000023780455 __episode_1008885233.txt",
+      "predicted_count": 20,
+      "reference_count": 6,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 20,
+        "false_negatives": 6
+      },
+      "relaxed": {
+        "precision": 0.3,
+        "recall": 1.0,
+        "f1": 0.4615384615384615,
+        "true_positives": 6,
+        "false_positives": 14,
+        "false_negatives": 0
+      }
+    },
+    {
+      "filename": "NHC70331067_episodio1008654344.txt",
+      "predicted_count": 43,
+      "reference_count": 17,
+      "strict": {
+        "precision": 0.23255813953488372,
+        "recall": 0.5882352941176471,
+        "f1": 0.3333333333333333,
+        "true_positives": 10,
+        "false_positives": 33,
+        "false_negatives": 7
+      },
+      "relaxed": {
+        "precision": 0.3953488372093023,
+        "recall": 1.0,
+        "f1": 0.5666666666666667,
+        "true_positives": 17,
+        "false_positives": 26,
+        "false_negatives": 0
+      }
+    },
+    {
+      "filename": "NHC70047627_episodio1008589775.txt",
+      "predicted_count": 38,
+      "reference_count": 24,
+      "strict": {
+        "precision": 0.3783783783783784,
+        "recall": 0.6086956521739131,
+        "f1": 0.4666666666666667,
+        "true_positives": 14,
+        "false_positives": 23,
+        "false_negatives": 9
+      },
+      "relaxed": {
+        "precision": 0.5526315789473685,
+        "recall": 0.875,
+        "f1": 0.6774193548387096,
+        "true_positives": 21,
+        "false_positives": 17,
+        "false_negatives": 3
+      }
+    },
+    {
+      "filename": "0000000010000000017305457 __episode_1008902863.txt",
+      "predicted_count": 301,
+      "reference_count": 142,
+      "strict": {
+        "precision": 0.10631229235880399,
+        "recall": 0.26666666666666666,
+        "f1": 0.15201900237529692,
+        "true_positives": 32,
+        "false_positives": 269,
+        "false_negatives": 88
+      },
+      "relaxed": {
+        "precision": 0.37209302325581395,
+        "recall": 0.7887323943661971,
+        "f1": 0.5056433408577877,
+        "true_positives": 112,
+        "false_positives": 189,
+        "false_negatives": 30
+      }
+    },
+    {
+      "filename": "0000000010000000017190108 __episode_1008913308.txt",
+      "predicted_count": 19,
+      "reference_count": 8,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 19,
+        "false_negatives": 8
+      },
+      "relaxed": {
+        "precision": 0.3684210526315789,
+        "recall": 0.875,
+        "f1": 0.5185185185185185,
+        "true_positives": 7,
+        "false_positives": 12,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "0000000010000000024951201 __episode_1008838715.txt",
+      "predicted_count": 221,
+      "reference_count": 114,
+      "strict": {
+        "precision": 0.13122171945701358,
+        "recall": 0.31521739130434784,
+        "f1": 0.1853035143769968,
+        "true_positives": 29,
+        "false_positives": 192,
+        "false_negatives": 63
+      },
+      "relaxed": {
+        "precision": 0.4434389140271493,
+        "recall": 0.8596491228070176,
+        "f1": 0.5850746268656716,
+        "true_positives": 98,
+        "false_positives": 123,
+        "false_negatives": 16
+      }
+    },
+    {
+      "filename": "0000000010000000053814074 __episode_1008898208.txt",
+      "predicted_count": 225,
+      "reference_count": 105,
+      "strict": {
+        "precision": 0.15555555555555556,
+        "recall": 0.3431372549019608,
+        "f1": 0.21406727828746178,
+        "true_positives": 35,
+        "false_positives": 190,
+        "false_negatives": 67
+      },
+      "relaxed": {
+        "precision": 0.38222222222222224,
+        "recall": 0.819047619047619,
+        "f1": 0.5212121212121212,
+        "true_positives": 86,
+        "false_positives": 139,
+        "false_negatives": 19
+      }
+    },
+    {
+      "filename": "0000000010000000057339787 __episode_1008843969.txt",
+      "predicted_count": 347,
+      "reference_count": 143,
+      "strict": {
+        "precision": 0.15028901734104047,
+        "recall": 0.4126984126984127,
+        "f1": 0.22033898305084745,
+        "true_positives": 52,
+        "false_positives": 294,
+        "false_negatives": 74
+      },
+      "relaxed": {
+        "precision": 0.40057636887608067,
+        "recall": 0.972027972027972,
+        "f1": 0.5673469387755102,
+        "true_positives": 139,
+        "false_positives": 208,
+        "false_negatives": 4
+      }
+    },
+    {
+      "filename": "NHC70191042_episodio1008368134.txt",
+      "predicted_count": 83,
+      "reference_count": 58,
+      "strict": {
+        "precision": 0.6024096385542169,
+        "recall": 0.8620689655172413,
+        "f1": 0.7092198581560283,
+        "true_positives": 50,
+        "false_positives": 33,
+        "false_negatives": 8
+      },
+      "relaxed": {
+        "precision": 0.6626506024096386,
+        "recall": 0.9482758620689655,
+        "f1": 0.7801418439716312,
+        "true_positives": 55,
+        "false_positives": 28,
+        "false_negatives": 3
+      }
+    },
+    {
+      "filename": "NHC70352809_episodio1008322427.txt",
+      "predicted_count": 5,
+      "reference_count": 5,
+      "strict": {
+        "precision": 0.4,
+        "recall": 0.4,
+        "f1": 0.4000000000000001,
+        "true_positives": 2,
+        "false_positives": 3,
+        "false_negatives": 3
+      },
+      "relaxed": {
+        "precision": 0.6,
+        "recall": 0.6,
+        "f1": 0.6,
+        "true_positives": 3,
+        "false_positives": 2,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "0000000010000000016818095 __episode_1008897703.txt",
+      "predicted_count": 193,
+      "reference_count": 135,
+      "strict": {
+        "precision": 0.11917098445595854,
+        "recall": 0.19327731092436976,
+        "f1": 0.1474358974358974,
+        "true_positives": 23,
+        "false_positives": 170,
+        "false_negatives": 96
+      },
+      "relaxed": {
+        "precision": 0.5077720207253886,
+        "recall": 0.725925925925926,
+        "f1": 0.5975609756097562,
+        "true_positives": 98,
+        "false_positives": 95,
+        "false_negatives": 37
+      }
+    },
+    {
+      "filename": "NHC702752_episodio1008773774.txt",
+      "predicted_count": 111,
+      "reference_count": 85,
+      "strict": {
+        "precision": 0.6126126126126126,
+        "recall": 0.8,
+        "f1": 0.6938775510204082,
+        "true_positives": 68,
+        "false_positives": 43,
+        "false_negatives": 17
+      },
+      "relaxed": {
+        "precision": 0.7117117117117117,
+        "recall": 0.9294117647058824,
+        "f1": 0.8061224489795918,
+        "true_positives": 79,
+        "false_positives": 32,
+        "false_negatives": 6
+      }
+    },
+    {
+      "filename": "0000000010000000048934229 __episode_1008921548.txt",
+      "predicted_count": 323,
+      "reference_count": 146,
+      "strict": {
+        "precision": 0.159375,
+        "recall": 0.3617021276595745,
+        "f1": 0.2212581344902386,
+        "true_positives": 51,
+        "false_positives": 269,
+        "false_negatives": 90
+      },
+      "relaxed": {
+        "precision": 0.42105263157894735,
+        "recall": 0.9315068493150684,
+        "f1": 0.579957356076759,
+        "true_positives": 136,
+        "false_positives": 187,
+        "false_negatives": 10
+      }
+    },
+    {
+      "filename": "NHC70565678_episodio1008631700.txt",
+      "predicted_count": 55,
+      "reference_count": 47,
+      "strict": {
+        "precision": 0.7636363636363637,
+        "recall": 0.8936170212765957,
+        "f1": 0.8235294117647058,
+        "true_positives": 42,
+        "false_positives": 13,
+        "false_negatives": 5
+      },
+      "relaxed": {
+        "precision": 0.8,
+        "recall": 0.9361702127659575,
+        "f1": 0.8627450980392157,
+        "true_positives": 44,
+        "false_positives": 11,
+        "false_negatives": 3
+      }
+    },
+    {
+      "filename": "NHC70438471_episodio1008417470.txt",
+      "predicted_count": 28,
+      "reference_count": 32,
+      "strict": {
+        "precision": 0.5714285714285714,
+        "recall": 0.5,
+        "f1": 0.5333333333333333,
+        "true_positives": 16,
+        "false_positives": 12,
+        "false_negatives": 16
+      },
+      "relaxed": {
+        "precision": 0.7142857142857143,
+        "recall": 0.625,
+        "f1": 0.6666666666666666,
+        "true_positives": 20,
+        "false_positives": 8,
+        "false_negatives": 12
+      }
+    },
+    {
+      "filename": "NHC70537226_episodio1008274552.txt",
+      "predicted_count": 27,
+      "reference_count": 15,
+      "strict": {
+        "precision": 0.3333333333333333,
+        "recall": 0.6,
+        "f1": 0.42857142857142855,
+        "true_positives": 9,
+        "false_positives": 18,
+        "false_negatives": 6
+      },
+      "relaxed": {
+        "precision": 0.5555555555555556,
+        "recall": 1.0,
+        "f1": 0.7142857142857143,
+        "true_positives": 15,
+        "false_positives": 12,
+        "false_negatives": 0
+      }
+    },
+    {
+      "filename": "NHC70251765_episodio1008775192.txt",
+      "predicted_count": 80,
+      "reference_count": 54,
+      "strict": {
+        "precision": 0.5,
+        "recall": 0.7358490566037735,
+        "f1": 0.5954198473282442,
+        "true_positives": 39,
+        "false_positives": 39,
+        "false_negatives": 14
+      },
+      "relaxed": {
+        "precision": 0.6625,
+        "recall": 0.9814814814814815,
+        "f1": 0.7910447761194029,
+        "true_positives": 53,
+        "false_positives": 27,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "NHC70043343_episodio1008684883.txt",
+      "predicted_count": 79,
+      "reference_count": 49,
+      "strict": {
+        "precision": 0.4936708860759494,
+        "recall": 0.7959183673469388,
+        "f1": 0.609375,
+        "true_positives": 39,
+        "false_positives": 40,
+        "false_negatives": 10
+      },
+      "relaxed": {
+        "precision": 0.6075949367088608,
+        "recall": 0.9795918367346939,
+        "f1": 0.75,
+        "true_positives": 48,
+        "false_positives": 31,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "0000000010000000054225946 __episode_1008769671.txt",
+      "predicted_count": 272,
+      "reference_count": 115,
+      "strict": {
+        "precision": 0.08455882352941177,
+        "recall": 0.22772277227722773,
+        "f1": 0.12332439678284182,
+        "true_positives": 23,
+        "false_positives": 249,
+        "false_negatives": 78
+      },
+      "relaxed": {
+        "precision": 0.34558823529411764,
+        "recall": 0.8173913043478261,
+        "f1": 0.48578811369509045,
+        "true_positives": 94,
+        "false_positives": 178,
+        "false_negatives": 21
+      }
+    },
+    {
+      "filename": "NHC70098655_episodio1008399233.txt",
+      "predicted_count": 85,
+      "reference_count": 47,
+      "strict": {
+        "precision": 0.4235294117647059,
+        "recall": 0.7659574468085106,
+        "f1": 0.5454545454545454,
+        "true_positives": 36,
+        "false_positives": 49,
+        "false_negatives": 11
+      },
+      "relaxed": {
+        "precision": 0.5176470588235295,
+        "recall": 0.9361702127659575,
+        "f1": 0.6666666666666667,
+        "true_positives": 44,
+        "false_positives": 41,
+        "false_negatives": 3
+      }
+    },
+    {
+      "filename": "NHC70327389_episodio1008518673.txt",
+      "predicted_count": 129,
+      "reference_count": 88,
+      "strict": {
+        "precision": 0.5271317829457365,
+        "recall": 0.7727272727272727,
+        "f1": 0.6267281105990784,
+        "true_positives": 68,
+        "false_positives": 61,
+        "false_negatives": 20
+      },
+      "relaxed": {
+        "precision": 0.6744186046511628,
+        "recall": 0.9886363636363636,
+        "f1": 0.8018433179723502,
+        "true_positives": 87,
+        "false_positives": 42,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "0000000010000000060271069 __episode_1008838643.txt",
+      "predicted_count": 14,
+      "reference_count": 10,
+      "strict": {
+        "precision": 0.14285714285714285,
+        "recall": 0.2,
+        "f1": 0.16666666666666666,
+        "true_positives": 2,
+        "false_positives": 12,
+        "false_negatives": 8
+      },
+      "relaxed": {
+        "precision": 0.42857142857142855,
+        "recall": 0.6,
+        "f1": 0.5,
+        "true_positives": 6,
+        "false_positives": 8,
+        "false_negatives": 4
+      }
+    },
+    {
+      "filename": "NHC70746814_episodio1008254934.txt",
+      "predicted_count": 135,
+      "reference_count": 111,
+      "strict": {
+        "precision": 0.32592592592592595,
+        "recall": 0.411214953271028,
+        "f1": 0.36363636363636365,
+        "true_positives": 44,
+        "false_positives": 91,
+        "false_negatives": 63
+      },
+      "relaxed": {
+        "precision": 0.5925925925925926,
+        "recall": 0.7207207207207207,
+        "f1": 0.6504065040650406,
+        "true_positives": 80,
+        "false_positives": 55,
+        "false_negatives": 31
+      }
+    },
+    {
+      "filename": "NHC80049472_episodio1008759094.txt",
+      "predicted_count": 20,
+      "reference_count": 13,
+      "strict": {
+        "precision": 0.5,
+        "recall": 0.8333333333333334,
+        "f1": 0.625,
+        "true_positives": 10,
+        "false_positives": 10,
+        "false_negatives": 2
+      },
+      "relaxed": {
+        "precision": 0.65,
+        "recall": 1.0,
+        "f1": 0.787878787878788,
+        "true_positives": 13,
+        "false_positives": 7,
+        "false_negatives": 0
+      }
+    },
+    {
+      "filename": "0000000010000000011241847 __episode_1008885257.txt",
+      "predicted_count": 27,
+      "reference_count": 6,
+      "strict": {
+        "precision": 0.037037037037037035,
+        "recall": 0.16666666666666666,
+        "f1": 0.06060606060606061,
+        "true_positives": 1,
+        "false_positives": 26,
+        "false_negatives": 5
+      },
+      "relaxed": {
+        "precision": 0.18518518518518517,
+        "recall": 0.8333333333333334,
+        "f1": 0.303030303030303,
+        "true_positives": 5,
+        "false_positives": 22,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "NHC70626947_episodio1008575740.txt",
+      "predicted_count": 1,
+      "reference_count": 1,
+      "strict": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "relaxed": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 0
+      }
+    },
+    {
+      "filename": "NHC70736948_episodio1008236801.txt",
+      "predicted_count": 101,
+      "reference_count": 75,
+      "strict": {
+        "precision": 0.5050505050505051,
+        "recall": 0.684931506849315,
+        "f1": 0.5813953488372093,
+        "true_positives": 50,
+        "false_positives": 49,
+        "false_negatives": 23
+      },
+      "relaxed": {
+        "precision": 0.693069306930693,
+        "recall": 0.9333333333333333,
+        "f1": 0.7954545454545454,
+        "true_positives": 70,
+        "false_positives": 31,
+        "false_negatives": 5
+      }
+    },
+    {
+      "filename": "0000000010000000038346927 __episode_1008810718.txt",
+      "predicted_count": 346,
+      "reference_count": 156,
+      "strict": {
+        "precision": 0.0953757225433526,
+        "recall": 0.24812030075187969,
+        "f1": 0.13778705636743213,
+        "true_positives": 33,
+        "false_positives": 313,
+        "false_negatives": 100
+      },
+      "relaxed": {
+        "precision": 0.3988439306358382,
+        "recall": 0.8846153846153846,
+        "f1": 0.549800796812749,
+        "true_positives": 138,
+        "false_positives": 208,
+        "false_negatives": 18
+      }
+    },
+    {
+      "filename": "NHC70532703_episodio1008232518.txt",
+      "predicted_count": 62,
+      "reference_count": 33,
+      "strict": {
+        "precision": 0.3225806451612903,
+        "recall": 0.6451612903225806,
+        "f1": 0.4301075268817204,
+        "true_positives": 20,
+        "false_positives": 42,
+        "false_negatives": 11
+      },
+      "relaxed": {
+        "precision": 0.5,
+        "recall": 0.9393939393939394,
+        "f1": 0.6526315789473685,
+        "true_positives": 31,
+        "false_positives": 31,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "NHC70050542_episodio1008459850.txt",
+      "predicted_count": 91,
+      "reference_count": 66,
+      "strict": {
+        "precision": 0.5164835164835165,
+        "recall": 0.7230769230769231,
+        "f1": 0.6025641025641025,
+        "true_positives": 47,
+        "false_positives": 44,
+        "false_negatives": 18
+      },
+      "relaxed": {
+        "precision": 0.7252747252747253,
+        "recall": 1.0,
+        "f1": 0.840764331210191,
+        "true_positives": 66,
+        "false_positives": 25,
+        "false_negatives": 0
+      }
+    },
+    {
+      "filename": "NHC587890_episodio1008805789.txt",
+      "predicted_count": 18,
+      "reference_count": 11,
+      "strict": {
+        "precision": 0.3333333333333333,
+        "recall": 0.5454545454545454,
+        "f1": 0.41379310344827586,
+        "true_positives": 6,
+        "false_positives": 12,
+        "false_negatives": 5
+      },
+      "relaxed": {
+        "precision": 0.6111111111111112,
+        "recall": 1.0,
+        "f1": 0.7586206896551725,
+        "true_positives": 11,
+        "false_positives": 7,
+        "false_negatives": 0
+      }
+    },
+    {
+      "filename": "0000000010000000060264259 __episode_1008894576.txt",
+      "predicted_count": 368,
+      "reference_count": 139,
+      "strict": {
+        "precision": 0.11716621253405994,
+        "recall": 0.33076923076923076,
+        "f1": 0.1730382293762575,
+        "true_positives": 43,
+        "false_positives": 324,
+        "false_negatives": 87
+      },
+      "relaxed": {
+        "precision": 0.3451086956521739,
+        "recall": 0.9136690647482014,
+        "f1": 0.5009861932938856,
+        "true_positives": 127,
+        "false_positives": 241,
+        "false_negatives": 12
+      }
+    },
+    {
+      "filename": "0000000010000000037139168 __episode_1008928696.txt",
+      "predicted_count": 229,
+      "reference_count": 93,
+      "strict": {
+        "precision": 0.10043668122270742,
+        "recall": 0.3333333333333333,
+        "f1": 0.15436241610738255,
+        "true_positives": 23,
+        "false_positives": 206,
+        "false_negatives": 46
+      },
+      "relaxed": {
+        "precision": 0.38427947598253276,
+        "recall": 0.946236559139785,
+        "f1": 0.546583850931677,
+        "true_positives": 88,
+        "false_positives": 141,
+        "false_negatives": 5
+      }
+    },
+    {
+      "filename": "0000000010000000052763947 __episode_1008797496.txt",
+      "predicted_count": 341,
+      "reference_count": 151,
+      "strict": {
+        "precision": 0.13196480938416422,
+        "recall": 0.3333333333333333,
+        "f1": 0.18907563025210083,
+        "true_positives": 45,
+        "false_positives": 296,
+        "false_negatives": 90
+      },
+      "relaxed": {
+        "precision": 0.36950146627565983,
+        "recall": 0.8344370860927153,
+        "f1": 0.5121951219512196,
+        "true_positives": 126,
+        "false_positives": 215,
+        "false_negatives": 25
+      }
+    },
+    {
+      "filename": "NHC70642425_episodio1008447628.txt",
+      "predicted_count": 67,
+      "reference_count": 43,
+      "strict": {
+        "precision": 0.43283582089552236,
+        "recall": 0.6744186046511628,
+        "f1": 0.5272727272727272,
+        "true_positives": 29,
+        "false_positives": 38,
+        "false_negatives": 14
+      },
+      "relaxed": {
+        "precision": 0.6119402985074627,
+        "recall": 0.9534883720930233,
+        "f1": 0.7454545454545454,
+        "true_positives": 41,
+        "false_positives": 26,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "0000000010000000060879996 __episode_1008923367.txt",
+      "predicted_count": 20,
+      "reference_count": 6,
+      "strict": {
+        "precision": 0.1,
+        "recall": 0.3333333333333333,
+        "f1": 0.15384615384615383,
+        "true_positives": 2,
+        "false_positives": 18,
+        "false_negatives": 4
+      },
+      "relaxed": {
+        "precision": 0.25,
+        "recall": 0.8333333333333334,
+        "f1": 0.3846153846153846,
+        "true_positives": 5,
+        "false_positives": 15,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "0000000010000000026204781 __episode_1008919452.txt",
+      "predicted_count": 279,
+      "reference_count": 137,
+      "strict": {
+        "precision": 0.1003584229390681,
+        "recall": 0.21374045801526717,
+        "f1": 0.13658536585365855,
+        "true_positives": 28,
+        "false_positives": 251,
+        "false_negatives": 103
+      },
+      "relaxed": {
+        "precision": 0.4121863799283154,
+        "recall": 0.8394160583941606,
+        "f1": 0.5528846153846154,
+        "true_positives": 115,
+        "false_positives": 164,
+        "false_negatives": 22
+      }
+    }
+  ]
+}

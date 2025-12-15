@@ -1,0 +1,1091 @@
+{
+  "model": "LaBSE",
+  "test_dir": "docs/train",
+  "reference_file": "docs/train/entities_train.jsonl",
+  "entities_ref": "pipeline_anon/entities_reference.json",
+  "threshold": 0.7,
+  "num_files_processed": 50,
+  "model_load_time": 1.9245338439941406,
+  "processing_time": 2.362438440322876,
+  "total_time": 4.286972284317017,
+  "strict_metrics": {
+    "precision": 0.10144927536231885,
+    "recall": 0.0546875,
+    "f1": 0.07106598984771574,
+    "true_positives": 7,
+    "false_positives": 62,
+    "false_negatives": 121
+  },
+  "relaxed_metrics": {
+    "precision": 0.28169014084507044,
+    "recall": 0.15625,
+    "f1": 0.20100502512562815,
+    "true_positives": 20,
+    "false_positives": 51,
+    "false_negatives": 108
+  },
+  "avg_per_file": {
+    "strict": {
+      "precision": 0.085,
+      "recall": 0.052222222222222225,
+      "f1": 0.054969696969696974
+    },
+    "relaxed": {
+      "precision": 0.2223333333333333,
+      "recall": 0.16944444444444443,
+      "f1": 0.1619076479076479
+    }
+  },
+  "per_file_results": [
+    {
+      "filename": "b9c84350-796c-44f7-8ec8-9cf26bf293e0.txt",
+      "predicted_count": 2,
+      "reference_count": 2,
+      "strict": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "true_positives": 1,
+        "false_positives": 1,
+        "false_negatives": 1
+      },
+      "relaxed": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "true_positives": 1,
+        "false_positives": 1,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "1f9e4ef0-5888-4e45-9a6b-d5b7d0e99585.txt",
+      "predicted_count": 0,
+      "reference_count": 1,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "0786c584-29c6-4385-8bdd-52c0d8bde598.txt",
+      "predicted_count": 3,
+      "reference_count": 4,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 3,
+        "false_negatives": 4
+      },
+      "relaxed": {
+        "precision": 0.3333333333333333,
+        "recall": 0.25,
+        "f1": 0.28571428571428575,
+        "true_positives": 1,
+        "false_positives": 2,
+        "false_negatives": 3
+      }
+    },
+    {
+      "filename": "d7642321-8ad5-4ff4-b771-0f6d56a529c8.txt",
+      "predicted_count": 2,
+      "reference_count": 2,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 2,
+        "false_negatives": 2
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 2,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "5126ce85-5b8f-44e5-b7dd-c06b648ea7a1.txt",
+      "predicted_count": 1,
+      "reference_count": 3,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 3
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 3
+      }
+    },
+    {
+      "filename": "481d9189-6d6e-4e88-90fb-a1fb36fcabc5.txt",
+      "predicted_count": 1,
+      "reference_count": 2,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 2
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "419e33b1-7727-4aa5-9ec0-86383219b859.txt",
+      "predicted_count": 0,
+      "reference_count": 5,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 5
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 5
+      }
+    },
+    {
+      "filename": "27e9dd7d-7847-4273-927b-8b17c9ccc535.txt",
+      "predicted_count": 3,
+      "reference_count": 2,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 3,
+        "false_negatives": 2
+      },
+      "relaxed": {
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "f1": 0.4,
+        "true_positives": 1,
+        "false_positives": 2,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "d5eeb50c-fce0-4c0c-a9ad-bba5069ccf02.txt",
+      "predicted_count": 1,
+      "reference_count": 6,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 6
+      },
+      "relaxed": {
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 5
+      }
+    },
+    {
+      "filename": "1d56e50f-7133-4436-b003-942c269c84b6.txt",
+      "predicted_count": 1,
+      "reference_count": 1,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 1
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "c3a97e80-2fc1-4416-9d57-9f901a00dbd9.txt",
+      "predicted_count": 2,
+      "reference_count": 4,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 2,
+        "false_negatives": 4
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 2,
+        "false_negatives": 4
+      }
+    },
+    {
+      "filename": "d72e0ce2-764a-4d20-80fd-55ac9febcebb.txt",
+      "predicted_count": 4,
+      "reference_count": 2,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 4,
+        "false_negatives": 2
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 4,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "9dd8de72-58e1-4285-bf2f-20955345e0e8.txt",
+      "predicted_count": 0,
+      "reference_count": 1,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "18b9575f-4f84-42b3-bb53-df107f9be3de.txt",
+      "predicted_count": 0,
+      "reference_count": 2,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 2
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "ab1e5672-4a86-43b0-8a9b-c47bd00f438c.txt",
+      "predicted_count": 0,
+      "reference_count": 1,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "7c4123a6-ce1f-42f0-9a86-a1791f3e1569.txt",
+      "predicted_count": 1,
+      "reference_count": 2,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 2
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "0988b853-2fff-4e01-844d-04a797e26494.txt",
+      "predicted_count": 2,
+      "reference_count": 1,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 2,
+        "false_negatives": 1
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 2,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "08ad2ba7-67b5-49f1-a23c-82f9585aafb4.txt",
+      "predicted_count": 1,
+      "reference_count": 2,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 2
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "1a65012f-ee03-41bd-aeb0-69768762ea34.txt",
+      "predicted_count": 0,
+      "reference_count": 1,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "40971277-b933-409c-a33c-42e8ea3f21dd.txt",
+      "predicted_count": 0,
+      "reference_count": 1,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "44878b3b-b932-476a-8378-83ea8fe31c38.txt",
+      "predicted_count": 2,
+      "reference_count": 4,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 2,
+        "false_negatives": 4
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 2,
+        "false_negatives": 4
+      }
+    },
+    {
+      "filename": "931d3e7e-5c6b-472b-a838-df37c5d08939.txt",
+      "predicted_count": 4,
+      "reference_count": 1,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 4,
+        "false_negatives": 1
+      },
+      "relaxed": {
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1": 0.4,
+        "true_positives": 1,
+        "false_positives": 3,
+        "false_negatives": 0
+      }
+    },
+    {
+      "filename": "ae8a1077-494d-4818-a05d-d0a040edbf6e.txt",
+      "predicted_count": 0,
+      "reference_count": 2,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 2
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "07c58db6-c17a-4d30-8d55-152bfa2008c2.txt",
+      "predicted_count": 1,
+      "reference_count": 3,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 3
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 3
+      }
+    },
+    {
+      "filename": "a269ae88-fab5-4326-996f-0420470324bb.txt",
+      "predicted_count": 3,
+      "reference_count": 2,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 3,
+        "false_negatives": 2
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 3,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "3a14bd5b-fbae-416b-93a5-50c9f14d163a.txt",
+      "predicted_count": 1,
+      "reference_count": 1,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 1
+      },
+      "relaxed": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 0
+      }
+    },
+    {
+      "filename": "cfef4235-7923-451d-9c60-2fbff5f605b8.txt",
+      "predicted_count": 1,
+      "reference_count": 1,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 1
+      },
+      "relaxed": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 0
+      }
+    },
+    {
+      "filename": "bcbc17a5-82d8-4cdc-946d-447681c83fe6.txt",
+      "predicted_count": 3,
+      "reference_count": 1,
+      "strict": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "true_positives": 1,
+        "false_positives": 1,
+        "false_negatives": 0
+      },
+      "relaxed": {
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "true_positives": 1,
+        "false_positives": 2,
+        "false_negatives": 0
+      }
+    },
+    {
+      "filename": "cb84b631-83c9-49c6-a95d-e3f0f7af987c.txt",
+      "predicted_count": 0,
+      "reference_count": 1,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "9dc6824c-f75f-4e93-b317-a1fc7d837ff8.txt",
+      "predicted_count": 3,
+      "reference_count": 3,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 3,
+        "false_negatives": 3
+      },
+      "relaxed": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1": 0.6666666666666666,
+        "true_positives": 2,
+        "false_positives": 1,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "7b2f837e-8210-40d8-b0fb-f12e014ccb96.txt",
+      "predicted_count": 3,
+      "reference_count": 2,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 3,
+        "false_negatives": 2
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 3,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "410e1828-07a4-400d-9875-1e146dd8325a.txt",
+      "predicted_count": 0,
+      "reference_count": 5,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 5
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 5
+      }
+    },
+    {
+      "filename": "83b2fc0e-5f1c-43f8-8ebc-65046e9189c7.txt",
+      "predicted_count": 1,
+      "reference_count": 1,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 1
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "aadb7074-6d16-4314-b2dd-549cb48a76aa.txt",
+      "predicted_count": 0,
+      "reference_count": 2,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 2
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "526dcb8c-05bf-4384-a545-b49770907e98.txt",
+      "predicted_count": 1,
+      "reference_count": 4,
+      "strict": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 3
+      },
+      "relaxed": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 3
+      }
+    },
+    {
+      "filename": "ebff3977-db72-4f91-b6d0-2f52b4ce473d.txt",
+      "predicted_count": 2,
+      "reference_count": 9,
+      "strict": {
+        "precision": 0.5,
+        "recall": 0.1111111111111111,
+        "f1": 0.1818181818181818,
+        "true_positives": 1,
+        "false_positives": 1,
+        "false_negatives": 8
+      },
+      "relaxed": {
+        "precision": 1.0,
+        "recall": 0.2222222222222222,
+        "f1": 0.3636363636363636,
+        "true_positives": 2,
+        "false_positives": 0,
+        "false_negatives": 7
+      }
+    },
+    {
+      "filename": "fc27b06f-31db-4920-b54e-1556218f2c3c.txt",
+      "predicted_count": 0,
+      "reference_count": 3,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 3
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 3
+      }
+    },
+    {
+      "filename": "01f2ca88-3eb7-4b79-a80b-23961833c12e.txt",
+      "predicted_count": 1,
+      "reference_count": 3,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 3
+      },
+      "relaxed": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "dc6f562d-4cf5-4ac6-9ee6-53fdc2c53f92.txt",
+      "predicted_count": 5,
+      "reference_count": 4,
+      "strict": {
+        "precision": 0.25,
+        "recall": 0.25,
+        "f1": 0.25,
+        "true_positives": 1,
+        "false_positives": 3,
+        "false_negatives": 3
+      },
+      "relaxed": {
+        "precision": 0.2,
+        "recall": 0.25,
+        "f1": 0.22222222222222224,
+        "true_positives": 1,
+        "false_positives": 4,
+        "false_negatives": 3
+      }
+    },
+    {
+      "filename": "eb17eace-8907-43e9-9535-30775e366a4b.txt",
+      "predicted_count": 3,
+      "reference_count": 3,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 3,
+        "false_negatives": 3
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 3,
+        "false_negatives": 3
+      }
+    },
+    {
+      "filename": "2d7176f0-ca15-4172-bf57-266159e0958e.txt",
+      "predicted_count": 1,
+      "reference_count": 2,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 2
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "caa8f52c-8840-4b73-9998-0ef3d111541f.txt",
+      "predicted_count": 1,
+      "reference_count": 3,
+      "strict": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 2
+      },
+      "relaxed": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "7c66502e-7ed5-4e5d-85af-983d353335c0.txt",
+      "predicted_count": 0,
+      "reference_count": 2,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 2
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "64f50524-cbd6-4570-827a-ca31950da62a.txt",
+      "predicted_count": 3,
+      "reference_count": 1,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 3,
+        "false_negatives": 1
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 3,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "525ca468-f034-4b23-9457-894dcf676df2.txt",
+      "predicted_count": 4,
+      "reference_count": 3,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 4,
+        "false_negatives": 3
+      },
+      "relaxed": {
+        "precision": 0.5,
+        "recall": 0.6666666666666666,
+        "f1": 0.5714285714285715,
+        "true_positives": 2,
+        "false_positives": 2,
+        "false_negatives": 1
+      }
+    },
+    {
+      "filename": "2c429326-09a6-470b-a7fc-425c8d27872e.txt",
+      "predicted_count": 0,
+      "reference_count": 2,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 2
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "3fad788a-4bfe-4fce-88f0-b23e1e295508.txt",
+      "predicted_count": 2,
+      "reference_count": 6,
+      "strict": {
+        "precision": 0.5,
+        "recall": 0.16666666666666666,
+        "f1": 0.25,
+        "true_positives": 1,
+        "false_positives": 1,
+        "false_negatives": 5
+      },
+      "relaxed": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "true_positives": 2,
+        "false_positives": 0,
+        "false_negatives": 4
+      }
+    },
+    {
+      "filename": "de3a5730-9a7e-49e9-bbf8-885699b0e851.txt",
+      "predicted_count": 0,
+      "reference_count": 5,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 5
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 5
+      }
+    },
+    {
+      "filename": "63ce664c-eacf-4c3e-ab90-fba388b92924.txt",
+      "predicted_count": 2,
+      "reference_count": 2,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 2,
+        "false_negatives": 2
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 2,
+        "false_negatives": 2
+      }
+    },
+    {
+      "filename": "1d5115f1-f5f0-4294-8bf3-4d55b87b9e27.txt",
+      "predicted_count": 0,
+      "reference_count": 2,
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 2
+      },
+      "relaxed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 2
+      }
+    }
+  ]
+}

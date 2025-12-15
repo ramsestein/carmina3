@@ -1,0 +1,33 @@
+# Core dependencies for NER fine-tuning and evaluation
+requests>=2.31.0
+aiohttp>=3.8.0
+transformers>=4.30.0
+torch>=2.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+sentence-transformers>=2.2.0
+datasets>=2.12.0
+accelerate>=0.20.0
+safetensors>=0.3.0
+tokenizers>=0.13.0
+tqdm>=4.65.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+jupyter>=1.0.0
+ipykernel>=6.23.0
+optuna>=3.0.0
+protobuf>=3.20.0
+huggingface_hub>=0.16.0
+seqeval>=1.2.2
+sentencepiece>=0.1.99
+autogluon.multimodal>=1.0.0
+
+# Statistical analysis and corpus evaluation (Paper Q1)
+# Required for: analyze_corpus_bias_diversity.py, weat_gender_analysis.py
+scipy>=1.10.0  # Statistical tests (kstest, entropy, etc.), WEAT analysis
+
+# Optional: Advanced visualizations (t-SNE, UMAP)
+# Uncomment if you need advanced dimensionality reduction visualizations
+# umap-learn>=0.5.3  # UMAP for document embeddings visualization
+# Note: sklearn is already included above (scikit-learn)

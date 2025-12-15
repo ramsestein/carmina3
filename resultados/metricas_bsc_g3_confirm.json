@@ -1,0 +1,2527 @@
+{
+  "model": "bsc_ehr_anon_bin + g3_confirm",
+  "train_directory": "docs/train",
+  "reference_file": "docs/train/entities_train.jsonl",
+  "total_files_available": 7246,
+  "total_files_processed": 50,
+  "files_selection": "random_50",
+  "bert_threshold": 0.0,
+  "context_size": 200,
+  "timing": {
+    "model_loading": {
+      "bert_load_time_seconds": 2.779470205307007,
+      "g3_load_time_seconds": 3.9529595375061035,
+      "total_load_time_seconds": 6.73242974281311
+    },
+    "processing": {
+      "total_processing_time_seconds": 54.464399337768555,
+      "total_bert_time_seconds": 1.250364065170288,
+      "total_g3_time_seconds": 53.19865965843201,
+      "total_metrics_time_seconds": 53.20169138908386,
+      "average_per_example": {
+        "bert_extraction_seconds": 0.02500728130340576,
+        "g3_confirmation_seconds": 1.06397319316864,
+        "metrics_calculation_seconds": 1.0640338277816772,
+        "total_seconds": 1.089287986755371
+      },
+      "g3_queries": {
+        "total_queries": 152,
+        "average_queries_per_file": 3.04,
+        "average_time_per_query_seconds": 0.34998464270641927,
+        "min_query_time_seconds": 0.3304176330566406,
+        "max_query_time_seconds": 0.7340128421783447
+      }
+    },
+    "total_time_seconds": 61.196829080581665
+  },
+  "metrics": {
+    "bert_only": {
+      "strict": {
+        "precision": 0.13815789473684212,
+        "recall": 0.1640625,
+        "f1": 0.15,
+        "true_positives": 21,
+        "false_positives": 131,
+        "false_negatives": 107
+      },
+      "relaxed": {
+        "precision": 0.45394736842105265,
+        "recall": 0.5390625,
+        "f1": 0.4928571428571429,
+        "true_positives": 69,
+        "false_positives": 83,
+        "false_negatives": 59
+      }
+    },
+    "bert_g3": {
+      "strict": {
+        "precision": 0.14383561643835616,
+        "recall": 0.1640625,
+        "f1": 0.1532846715328467,
+        "true_positives": 21,
+        "false_positives": 125,
+        "false_negatives": 107
+      },
+      "relaxed": {
+        "precision": 0.4657534246575342,
+        "recall": 0.53125,
+        "f1": 0.49635036496350365,
+        "true_positives": 68,
+        "false_positives": 78,
+        "false_negatives": 60
+      }
+    }
+  },
+  "per_example_results": [
+    {
+      "filename": "b9c84350-796c-44f7-8ec8-9cf26bf293e0.txt",
+      "bert_entities_count": 3,
+      "confirmed_entities_count": 3,
+      "reference_entities_count": 2,
+      "g3_queries_count": 3,
+      "times": {
+        "bert_extraction": 0.14908289909362793,
+        "g3_confirmation": 1.4194133281707764,
+        "metrics_calculation": 1.4194133281707764,
+        "total": 1.5684962272644043
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "f1": 0.4,
+          "true_positives": 1,
+          "false_positives": 2,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "true_positives": 2,
+          "false_positives": 1,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "f1": 0.4,
+          "true_positives": 1,
+          "false_positives": 2,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "true_positives": 2,
+          "false_positives": 1,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "1f9e4ef0-5888-4e45-9a6b-d5b7d0e99585.txt",
+      "bert_entities_count": 1,
+      "confirmed_entities_count": 0,
+      "reference_entities_count": 1,
+      "g3_queries_count": 1,
+      "times": {
+        "bert_extraction": 0.03000617027282715,
+        "g3_confirmation": 0.3405568599700928,
+        "metrics_calculation": 0.3405568599700928,
+        "total": 0.3705630302429199
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1
+        }
+      }
+    },
+    {
+      "filename": "0786c584-29c6-4385-8bdd-52c0d8bde598.txt",
+      "bert_entities_count": 3,
+      "confirmed_entities_count": 3,
+      "reference_entities_count": 4,
+      "g3_queries_count": 3,
+      "times": {
+        "bert_extraction": 0.02550482749938965,
+        "g3_confirmation": 1.0334103107452393,
+        "metrics_calculation": 1.0334103107452393,
+        "total": 1.058915138244629
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 3,
+          "false_negatives": 4
+        },
+        "relaxed": {
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1": 0.28571428571428575,
+          "true_positives": 1,
+          "false_positives": 2,
+          "false_negatives": 3
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 3,
+          "false_negatives": 4
+        },
+        "relaxed": {
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1": 0.28571428571428575,
+          "true_positives": 1,
+          "false_positives": 2,
+          "false_negatives": 3
+        }
+      }
+    },
+    {
+      "filename": "d7642321-8ad5-4ff4-b771-0f6d56a529c8.txt",
+      "bert_entities_count": 1,
+      "confirmed_entities_count": 1,
+      "reference_entities_count": 2,
+      "g3_queries_count": 1,
+      "times": {
+        "bert_extraction": 0.029999971389770508,
+        "g3_confirmation": 0.33878397941589355,
+        "metrics_calculation": 0.33878397941589355,
+        "total": 0.36878395080566406
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 2
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 2
+        }
+      }
+    },
+    {
+      "filename": "5126ce85-5b8f-44e5-b7dd-c06b648ea7a1.txt",
+      "bert_entities_count": 8,
+      "confirmed_entities_count": 7,
+      "reference_entities_count": 3,
+      "g3_queries_count": 8,
+      "times": {
+        "bert_extraction": 0.03600168228149414,
+        "g3_confirmation": 2.7317135334014893,
+        "metrics_calculation": 2.7317135334014893,
+        "total": 2.7677152156829834
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 8,
+          "false_negatives": 3
+        },
+        "relaxed": {
+          "precision": 0.125,
+          "recall": 0.3333333333333333,
+          "f1": 0.18181818181818182,
+          "true_positives": 1,
+          "false_positives": 7,
+          "false_negatives": 2
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 7,
+          "false_negatives": 3
+        },
+        "relaxed": {
+          "precision": 0.14285714285714285,
+          "recall": 0.3333333333333333,
+          "f1": 0.2,
+          "true_positives": 1,
+          "false_positives": 6,
+          "false_negatives": 2
+        }
+      }
+    },
+    {
+      "filename": "481d9189-6d6e-4e88-90fb-a1fb36fcabc5.txt",
+      "bert_entities_count": 1,
+      "confirmed_entities_count": 1,
+      "reference_entities_count": 2,
+      "g3_queries_count": 1,
+      "times": {
+        "bert_extraction": 0.01801013946533203,
+        "g3_confirmation": 0.34061574935913086,
+        "metrics_calculation": 0.34061574935913086,
+        "total": 0.3586258888244629
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 2
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 2
+        }
+      }
+    },
+    {
+      "filename": "419e33b1-7727-4aa5-9ec0-86383219b859.txt",
+      "bert_entities_count": 7,
+      "confirmed_entities_count": 7,
+      "reference_entities_count": 5,
+      "g3_queries_count": 7,
+      "times": {
+        "bert_extraction": 0.024999380111694336,
+        "g3_confirmation": 2.4773261547088623,
+        "metrics_calculation": 2.4773261547088623,
+        "total": 2.5023255348205566
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 7,
+          "false_negatives": 5
+        },
+        "relaxed": {
+          "precision": 0.42857142857142855,
+          "recall": 0.6,
+          "f1": 0.5,
+          "true_positives": 3,
+          "false_positives": 4,
+          "false_negatives": 2
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 7,
+          "false_negatives": 5
+        },
+        "relaxed": {
+          "precision": 0.42857142857142855,
+          "recall": 0.6,
+          "f1": 0.5,
+          "true_positives": 3,
+          "false_positives": 4,
+          "false_negatives": 2
+        }
+      }
+    },
+    {
+      "filename": "27e9dd7d-7847-4273-927b-8b17c9ccc535.txt",
+      "bert_entities_count": 1,
+      "confirmed_entities_count": 1,
+      "reference_entities_count": 2,
+      "g3_queries_count": 1,
+      "times": {
+        "bert_extraction": 0.012007713317871094,
+        "g3_confirmation": 0.3477022647857666,
+        "metrics_calculation": 0.3477022647857666,
+        "total": 0.3597099781036377
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        }
+      }
+    },
+    {
+      "filename": "d5eeb50c-fce0-4c0c-a9ad-bba5069ccf02.txt",
+      "bert_entities_count": 7,
+      "confirmed_entities_count": 7,
+      "reference_entities_count": 6,
+      "g3_queries_count": 7,
+      "times": {
+        "bert_extraction": 0.007508516311645508,
+        "g3_confirmation": 2.3991622924804688,
+        "metrics_calculation": 2.3991622924804688,
+        "total": 2.4066708087921143
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.5714285714285714,
+          "recall": 0.6666666666666666,
+          "f1": 0.6153846153846153,
+          "true_positives": 4,
+          "false_positives": 3,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 0.8571428571428571,
+          "recall": 1.0,
+          "f1": 0.923076923076923,
+          "true_positives": 6,
+          "false_positives": 1,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.5714285714285714,
+          "recall": 0.6666666666666666,
+          "f1": 0.6153846153846153,
+          "true_positives": 4,
+          "false_positives": 3,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 0.8571428571428571,
+          "recall": 1.0,
+          "f1": 0.923076923076923,
+          "true_positives": 6,
+          "false_positives": 1,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "1d56e50f-7133-4436-b003-942c269c84b6.txt",
+      "bert_entities_count": 0,
+      "confirmed_entities_count": 0,
+      "reference_entities_count": 1,
+      "g3_queries_count": 0,
+      "times": {
+        "bert_extraction": 0.04699897766113281,
+        "g3_confirmation": 0.0,
+        "metrics_calculation": 0.0,
+        "total": 0.04699897766113281
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1
+        }
+      }
+    },
+    {
+      "filename": "c3a97e80-2fc1-4416-9d57-9f901a00dbd9.txt",
+      "bert_entities_count": 7,
+      "confirmed_entities_count": 7,
+      "reference_entities_count": 4,
+      "g3_queries_count": 7,
+      "times": {
+        "bert_extraction": 0.032006025314331055,
+        "g3_confirmation": 2.3965461254119873,
+        "metrics_calculation": 2.3965461254119873,
+        "total": 2.4285521507263184
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 7,
+          "false_negatives": 4
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 7,
+          "false_negatives": 4
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 7,
+          "false_negatives": 4
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 7,
+          "false_negatives": 4
+        }
+      }
+    },
+    {
+      "filename": "d72e0ce2-764a-4d20-80fd-55ac9febcebb.txt",
+      "bert_entities_count": 2,
+      "confirmed_entities_count": 2,
+      "reference_entities_count": 2,
+      "g3_queries_count": 2,
+      "times": {
+        "bert_extraction": 0.022827625274658203,
+        "g3_confirmation": 0.6798343658447266,
+        "metrics_calculation": 0.6798343658447266,
+        "total": 0.7026619911193848
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2
+        }
+      }
+    },
+    {
+      "filename": "9dd8de72-58e1-4285-bf2f-20955345e0e8.txt",
+      "bert_entities_count": 1,
+      "confirmed_entities_count": 1,
+      "reference_entities_count": 1,
+      "g3_queries_count": 1,
+      "times": {
+        "bert_extraction": 0.0059168338775634766,
+        "g3_confirmation": 0.3342411518096924,
+        "metrics_calculation": 0.3342411518096924,
+        "total": 0.34015798568725586
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "18b9575f-4f84-42b3-bb53-df107f9be3de.txt",
+      "bert_entities_count": 1,
+      "confirmed_entities_count": 1,
+      "reference_entities_count": 2,
+      "g3_queries_count": 1,
+      "times": {
+        "bert_extraction": 0.03000020980834961,
+        "g3_confirmation": 0.3377718925476074,
+        "metrics_calculation": 0.3377718925476074,
+        "total": 0.36777210235595703
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        }
+      }
+    },
+    {
+      "filename": "ab1e5672-4a86-43b0-8a9b-c47bd00f438c.txt",
+      "bert_entities_count": 1,
+      "confirmed_entities_count": 1,
+      "reference_entities_count": 1,
+      "g3_queries_count": 1,
+      "times": {
+        "bert_extraction": 0.0069980621337890625,
+        "g3_confirmation": 0.3415217399597168,
+        "metrics_calculation": 0.3415217399597168,
+        "total": 0.34851980209350586
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "7c4123a6-ce1f-42f0-9a86-a1791f3e1569.txt",
+      "bert_entities_count": 3,
+      "confirmed_entities_count": 3,
+      "reference_entities_count": 2,
+      "g3_queries_count": 3,
+      "times": {
+        "bert_extraction": 0.028996706008911133,
+        "g3_confirmation": 1.0177791118621826,
+        "metrics_calculation": 1.0177791118621826,
+        "total": 1.0477867126464844
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 3,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "true_positives": 2,
+          "false_positives": 1,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 3,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "true_positives": 2,
+          "false_positives": 1,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "0988b853-2fff-4e01-844d-04a797e26494.txt",
+      "bert_entities_count": 3,
+      "confirmed_entities_count": 3,
+      "reference_entities_count": 1,
+      "g3_queries_count": 3,
+      "times": {
+        "bert_extraction": 0.030627727508544922,
+        "g3_confirmation": 1.015845775604248,
+        "metrics_calculation": 1.015845775604248,
+        "total": 1.046473503112793
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 3,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1": 0.5,
+          "true_positives": 1,
+          "false_positives": 2,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 3,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1": 0.5,
+          "true_positives": 1,
+          "false_positives": 2,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "08ad2ba7-67b5-49f1-a23c-82f9585aafb4.txt",
+      "bert_entities_count": 1,
+      "confirmed_entities_count": 1,
+      "reference_entities_count": 2,
+      "g3_queries_count": 1,
+      "times": {
+        "bert_extraction": 0.012001991271972656,
+        "g3_confirmation": 0.3385484218597412,
+        "metrics_calculation": 0.3385484218597412,
+        "total": 0.35055041313171387
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        }
+      }
+    },
+    {
+      "filename": "1a65012f-ee03-41bd-aeb0-69768762ea34.txt",
+      "bert_entities_count": 1,
+      "confirmed_entities_count": 1,
+      "reference_entities_count": 1,
+      "g3_queries_count": 1,
+      "times": {
+        "bert_extraction": 0.01301121711730957,
+        "g3_confirmation": 0.338470458984375,
+        "metrics_calculation": 0.338470458984375,
+        "total": 0.35148167610168457
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "40971277-b933-409c-a33c-42e8ea3f21dd.txt",
+      "bert_entities_count": 1,
+      "confirmed_entities_count": 1,
+      "reference_entities_count": 1,
+      "g3_queries_count": 1,
+      "times": {
+        "bert_extraction": 0.036000728607177734,
+        "g3_confirmation": 0.3395061492919922,
+        "metrics_calculation": 0.3395061492919922,
+        "total": 0.3755068778991699
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1
+        }
+      }
+    },
+    {
+      "filename": "44878b3b-b932-476a-8378-83ea8fe31c38.txt",
+      "bert_entities_count": 2,
+      "confirmed_entities_count": 2,
+      "reference_entities_count": 4,
+      "g3_queries_count": 2,
+      "times": {
+        "bert_extraction": 0.029005765914916992,
+        "g3_confirmation": 0.7032947540283203,
+        "metrics_calculation": 0.7032947540283203,
+        "total": 0.7331967353820801
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 4
+        },
+        "relaxed": {
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1": 0.3333333333333333,
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 3
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 4
+        },
+        "relaxed": {
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1": 0.3333333333333333,
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 3
+        }
+      }
+    },
+    {
+      "filename": "931d3e7e-5c6b-472b-a838-df37c5d08939.txt",
+      "bert_entities_count": 2,
+      "confirmed_entities_count": 2,
+      "reference_entities_count": 1,
+      "g3_queries_count": 2,
+      "times": {
+        "bert_extraction": 0.023077011108398438,
+        "g3_confirmation": 0.6808927059173584,
+        "metrics_calculation": 0.6808927059173584,
+        "total": 0.7039697170257568
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "ae8a1077-494d-4818-a05d-d0a040edbf6e.txt",
+      "bert_entities_count": 2,
+      "confirmed_entities_count": 2,
+      "reference_entities_count": 2,
+      "g3_queries_count": 2,
+      "times": {
+        "bert_extraction": 0.028887510299682617,
+        "g3_confirmation": 0.6908755302429199,
+        "metrics_calculation": 0.6908755302429199,
+        "total": 0.7197630405426025
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "07c58db6-c17a-4d30-8d55-152bfa2008c2.txt",
+      "bert_entities_count": 3,
+      "confirmed_entities_count": 3,
+      "reference_entities_count": 3,
+      "g3_queries_count": 3,
+      "times": {
+        "bert_extraction": 0.012000560760498047,
+        "g3_confirmation": 1.005821943283081,
+        "metrics_calculation": 1.005821943283081,
+        "total": 1.017822504043579
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "a269ae88-fab5-4326-996f-0420470324bb.txt",
+      "bert_entities_count": 3,
+      "confirmed_entities_count": 3,
+      "reference_entities_count": 2,
+      "g3_queries_count": 3,
+      "times": {
+        "bert_extraction": 0.023766279220581055,
+        "g3_confirmation": 1.0267949104309082,
+        "metrics_calculation": 1.0278267860412598,
+        "total": 1.0515930652618408
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 3,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 3,
+          "false_negatives": 2
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 3,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 3,
+          "false_negatives": 2
+        }
+      }
+    },
+    {
+      "filename": "3a14bd5b-fbae-416b-93a5-50c9f14d163a.txt",
+      "bert_entities_count": 1,
+      "confirmed_entities_count": 1,
+      "reference_entities_count": 1,
+      "g3_queries_count": 1,
+      "times": {
+        "bert_extraction": 0.011134862899780273,
+        "g3_confirmation": 0.33806943893432617,
+        "metrics_calculation": 0.33806943893432617,
+        "total": 0.3502044677734375
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "cfef4235-7923-451d-9c60-2fbff5f605b8.txt",
+      "bert_entities_count": 2,
+      "confirmed_entities_count": 2,
+      "reference_entities_count": 1,
+      "g3_queries_count": 2,
+      "times": {
+        "bert_extraction": 0.02359628677368164,
+        "g3_confirmation": 0.6789090633392334,
+        "metrics_calculation": 0.6789090633392334,
+        "total": 0.702505350112915
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "bcbc17a5-82d8-4cdc-946d-447681c83fe6.txt",
+      "bert_entities_count": 1,
+      "confirmed_entities_count": 1,
+      "reference_entities_count": 1,
+      "g3_queries_count": 1,
+      "times": {
+        "bert_extraction": 0.023533344268798828,
+        "g3_confirmation": 0.33774900436401367,
+        "metrics_calculation": 0.33774900436401367,
+        "total": 0.3621697425842285
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "cb84b631-83c9-49c6-a95d-e3f0f7af987c.txt",
+      "bert_entities_count": 1,
+      "confirmed_entities_count": 1,
+      "reference_entities_count": 1,
+      "g3_queries_count": 1,
+      "times": {
+        "bert_extraction": 0.03698921203613281,
+        "g3_confirmation": 0.40410447120666504,
+        "metrics_calculation": 0.40410447120666504,
+        "total": 0.44109368324279785
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "9dc6824c-f75f-4e93-b317-a1fc7d837ff8.txt",
+      "bert_entities_count": 3,
+      "confirmed_entities_count": 2,
+      "reference_entities_count": 3,
+      "g3_queries_count": 3,
+      "times": {
+        "bert_extraction": 0.025532960891723633,
+        "g3_confirmation": 1.0461702346801758,
+        "metrics_calculation": 1.0461702346801758,
+        "total": 1.0717031955718994
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 3,
+          "false_negatives": 3
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 3,
+          "false_negatives": 3
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 3
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 3
+        }
+      }
+    },
+    {
+      "filename": "7b2f837e-8210-40d8-b0fb-f12e014ccb96.txt",
+      "bert_entities_count": 5,
+      "confirmed_entities_count": 5,
+      "reference_entities_count": 2,
+      "g3_queries_count": 5,
+      "times": {
+        "bert_extraction": 0.0329289436340332,
+        "g3_confirmation": 1.718658447265625,
+        "metrics_calculation": 1.718658447265625,
+        "total": 1.7515873908996582
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 5,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "f1": 0.28571428571428575,
+          "true_positives": 1,
+          "false_positives": 4,
+          "false_negatives": 1
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 5,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "f1": 0.28571428571428575,
+          "true_positives": 1,
+          "false_positives": 4,
+          "false_negatives": 1
+        }
+      }
+    },
+    {
+      "filename": "410e1828-07a4-400d-9875-1e146dd8325a.txt",
+      "bert_entities_count": 6,
+      "confirmed_entities_count": 6,
+      "reference_entities_count": 5,
+      "g3_queries_count": 6,
+      "times": {
+        "bert_extraction": 0.030008316040039062,
+        "g3_confirmation": 2.031350612640381,
+        "metrics_calculation": 2.031350612640381,
+        "total": 2.06135892868042
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 6,
+          "false_negatives": 5
+        },
+        "relaxed": {
+          "precision": 0.3333333333333333,
+          "recall": 0.4,
+          "f1": 0.3636363636363636,
+          "true_positives": 2,
+          "false_positives": 4,
+          "false_negatives": 3
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 6,
+          "false_negatives": 5
+        },
+        "relaxed": {
+          "precision": 0.3333333333333333,
+          "recall": 0.4,
+          "f1": 0.3636363636363636,
+          "true_positives": 2,
+          "false_positives": 4,
+          "false_negatives": 3
+        }
+      }
+    },
+    {
+      "filename": "83b2fc0e-5f1c-43f8-8ebc-65046e9189c7.txt",
+      "bert_entities_count": 1,
+      "confirmed_entities_count": 1,
+      "reference_entities_count": 1,
+      "g3_queries_count": 1,
+      "times": {
+        "bert_extraction": 0.02301335334777832,
+        "g3_confirmation": 0.33811092376708984,
+        "metrics_calculation": 0.33811092376708984,
+        "total": 0.36112427711486816
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 1,
+          "false_negatives": 1
+        }
+      }
+    },
+    {
+      "filename": "aadb7074-6d16-4314-b2dd-549cb48a76aa.txt",
+      "bert_entities_count": 2,
+      "confirmed_entities_count": 2,
+      "reference_entities_count": 2,
+      "g3_queries_count": 2,
+      "times": {
+        "bert_extraction": 0.011000633239746094,
+        "g3_confirmation": 0.6708757877349854,
+        "metrics_calculation": 0.671875,
+        "total": 0.6828756332397461
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "526dcb8c-05bf-4384-a545-b49770907e98.txt",
+      "bert_entities_count": 3,
+      "confirmed_entities_count": 3,
+      "reference_entities_count": 4,
+      "g3_queries_count": 3,
+      "times": {
+        "bert_extraction": 0.015994787216186523,
+        "g3_confirmation": 1.0268464088439941,
+        "metrics_calculation": 1.0268464088439941,
+        "total": 1.0428411960601807
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.6666666666666666,
+          "recall": 0.5,
+          "f1": 0.5714285714285715,
+          "true_positives": 2,
+          "false_positives": 1,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571,
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 1
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.6666666666666666,
+          "recall": 0.5,
+          "f1": 0.5714285714285715,
+          "true_positives": 2,
+          "false_positives": 1,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571,
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 1
+        }
+      }
+    },
+    {
+      "filename": "ebff3977-db72-4f91-b6d0-2f52b4ce473d.txt",
+      "bert_entities_count": 8,
+      "confirmed_entities_count": 7,
+      "reference_entities_count": 9,
+      "g3_queries_count": 8,
+      "times": {
+        "bert_extraction": 0.01707625389099121,
+        "g3_confirmation": 2.701650857925415,
+        "metrics_calculation": 2.701650857925415,
+        "total": 2.7187271118164062
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.25,
+          "recall": 0.2222222222222222,
+          "f1": 0.23529411764705882,
+          "true_positives": 2,
+          "false_positives": 6,
+          "false_negatives": 7
+        },
+        "relaxed": {
+          "precision": 0.625,
+          "recall": 0.5555555555555556,
+          "f1": 0.5882352941176471,
+          "true_positives": 5,
+          "false_positives": 3,
+          "false_negatives": 4
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.2857142857142857,
+          "recall": 0.2222222222222222,
+          "f1": 0.25,
+          "true_positives": 2,
+          "false_positives": 5,
+          "false_negatives": 7
+        },
+        "relaxed": {
+          "precision": 0.7142857142857143,
+          "recall": 0.5555555555555556,
+          "f1": 0.6250000000000001,
+          "true_positives": 5,
+          "false_positives": 2,
+          "false_negatives": 4
+        }
+      }
+    },
+    {
+      "filename": "fc27b06f-31db-4920-b54e-1556218f2c3c.txt",
+      "bert_entities_count": 2,
+      "confirmed_entities_count": 2,
+      "reference_entities_count": 3,
+      "g3_queries_count": 2,
+      "times": {
+        "bert_extraction": 0.02300262451171875,
+        "g3_confirmation": 0.6799428462982178,
+        "metrics_calculation": 0.6799428462982178,
+        "total": 0.7029454708099365
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 3
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 3
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 3
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 3
+        }
+      }
+    },
+    {
+      "filename": "01f2ca88-3eb7-4b79-a80b-23961833c12e.txt",
+      "bert_entities_count": 4,
+      "confirmed_entities_count": 4,
+      "reference_entities_count": 3,
+      "g3_queries_count": 4,
+      "times": {
+        "bert_extraction": 0.01100015640258789,
+        "g3_confirmation": 1.3649554252624512,
+        "metrics_calculation": 1.3649554252624512,
+        "total": 1.3769557476043701
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.5,
+          "recall": 0.6666666666666666,
+          "f1": 0.5714285714285715,
+          "true_positives": 2,
+          "false_positives": 2,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "true_positives": 3,
+          "false_positives": 1,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.5,
+          "recall": 0.6666666666666666,
+          "f1": 0.5714285714285715,
+          "true_positives": 2,
+          "false_positives": 2,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "true_positives": 3,
+          "false_positives": 1,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "dc6f562d-4cf5-4ac6-9ee6-53fdc2c53f92.txt",
+      "bert_entities_count": 7,
+      "confirmed_entities_count": 7,
+      "reference_entities_count": 4,
+      "g3_queries_count": 7,
+      "times": {
+        "bert_extraction": 0.03499436378479004,
+        "g3_confirmation": 2.3760454654693604,
+        "metrics_calculation": 2.3760454654693604,
+        "total": 2.4110398292541504
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 7,
+          "false_negatives": 4
+        },
+        "relaxed": {
+          "precision": 0.42857142857142855,
+          "recall": 0.75,
+          "f1": 0.5454545454545454,
+          "true_positives": 3,
+          "false_positives": 4,
+          "false_negatives": 1
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 7,
+          "false_negatives": 4
+        },
+        "relaxed": {
+          "precision": 0.42857142857142855,
+          "recall": 0.75,
+          "f1": 0.5454545454545454,
+          "true_positives": 3,
+          "false_positives": 4,
+          "false_negatives": 1
+        }
+      }
+    },
+    {
+      "filename": "eb17eace-8907-43e9-9535-30775e366a4b.txt",
+      "bert_entities_count": 4,
+      "confirmed_entities_count": 4,
+      "reference_entities_count": 3,
+      "g3_queries_count": 4,
+      "times": {
+        "bert_extraction": 0.029160737991333008,
+        "g3_confirmation": 1.3514940738677979,
+        "metrics_calculation": 1.352494716644287,
+        "total": 1.3816554546356201
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 4,
+          "false_negatives": 3
+        },
+        "relaxed": {
+          "precision": 0.25,
+          "recall": 0.3333333333333333,
+          "f1": 0.28571428571428575,
+          "true_positives": 1,
+          "false_positives": 3,
+          "false_negatives": 2
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 4,
+          "false_negatives": 3
+        },
+        "relaxed": {
+          "precision": 0.25,
+          "recall": 0.3333333333333333,
+          "f1": 0.28571428571428575,
+          "true_positives": 1,
+          "false_positives": 3,
+          "false_negatives": 2
+        }
+      }
+    },
+    {
+      "filename": "2d7176f0-ca15-4172-bf57-266159e0958e.txt",
+      "bert_entities_count": 7,
+      "confirmed_entities_count": 7,
+      "reference_entities_count": 2,
+      "g3_queries_count": 7,
+      "times": {
+        "bert_extraction": 0.03600192070007324,
+        "g3_confirmation": 2.3790366649627686,
+        "metrics_calculation": 2.3790366649627686,
+        "total": 2.415038585662842
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 7,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 0.2857142857142857,
+          "recall": 1.0,
+          "f1": 0.4444444444444445,
+          "true_positives": 2,
+          "false_positives": 5,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 7,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 0.2857142857142857,
+          "recall": 1.0,
+          "f1": 0.4444444444444445,
+          "true_positives": 2,
+          "false_positives": 5,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "caa8f52c-8840-4b73-9998-0ef3d111541f.txt",
+      "bert_entities_count": 2,
+      "confirmed_entities_count": 2,
+      "reference_entities_count": 3,
+      "g3_queries_count": 2,
+      "times": {
+        "bert_extraction": 0.012918233871459961,
+        "g3_confirmation": 0.6727705001831055,
+        "metrics_calculation": 0.6727705001831055,
+        "total": 0.6856887340545654
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 3
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 1
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 3
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 1
+        }
+      }
+    },
+    {
+      "filename": "7c66502e-7ed5-4e5d-85af-983d353335c0.txt",
+      "bert_entities_count": 2,
+      "confirmed_entities_count": 2,
+      "reference_entities_count": 2,
+      "g3_queries_count": 2,
+      "times": {
+        "bert_extraction": 0.011077642440795898,
+        "g3_confirmation": 0.680903434753418,
+        "metrics_calculation": 0.680903434753418,
+        "total": 0.6919810771942139
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "64f50524-cbd6-4570-827a-ca31950da62a.txt",
+      "bert_entities_count": 1,
+      "confirmed_entities_count": 1,
+      "reference_entities_count": 1,
+      "g3_queries_count": 1,
+      "times": {
+        "bert_extraction": 0.012000560760498047,
+        "g3_confirmation": 0.33459997177124023,
+        "metrics_calculation": 0.33459997177124023,
+        "total": 0.3466005325317383
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      }
+    },
+    {
+      "filename": "525ca468-f034-4b23-9457-894dcf676df2.txt",
+      "bert_entities_count": 3,
+      "confirmed_entities_count": 3,
+      "reference_entities_count": 3,
+      "g3_queries_count": 3,
+      "times": {
+        "bert_extraction": 0.02953052520751953,
+        "g3_confirmation": 1.0218303203582764,
+        "metrics_calculation": 1.0218303203582764,
+        "total": 1.051360845565796
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 3,
+          "false_negatives": 3
+        },
+        "relaxed": {
+          "precision": 0.3333333333333333,
+          "recall": 0.3333333333333333,
+          "f1": 0.3333333333333333,
+          "true_positives": 1,
+          "false_positives": 2,
+          "false_negatives": 2
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 3,
+          "false_negatives": 3
+        },
+        "relaxed": {
+          "precision": 0.3333333333333333,
+          "recall": 0.3333333333333333,
+          "f1": 0.3333333333333333,
+          "true_positives": 1,
+          "false_positives": 2,
+          "false_negatives": 2
+        }
+      }
+    },
+    {
+      "filename": "2c429326-09a6-470b-a7fc-425c8d27872e.txt",
+      "bert_entities_count": 6,
+      "confirmed_entities_count": 6,
+      "reference_entities_count": 2,
+      "g3_queries_count": 6,
+      "times": {
+        "bert_extraction": 0.015002012252807617,
+        "g3_confirmation": 2.3892924785614014,
+        "metrics_calculation": 2.3892924785614014,
+        "total": 2.404294490814209
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 6,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 6,
+          "false_negatives": 2
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 6,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 6,
+          "false_negatives": 2
+        }
+      }
+    },
+    {
+      "filename": "3fad788a-4bfe-4fce-88f0-b23e1e295508.txt",
+      "bert_entities_count": 4,
+      "confirmed_entities_count": 4,
+      "reference_entities_count": 6,
+      "g3_queries_count": 4,
+      "times": {
+        "bert_extraction": 0.015003442764282227,
+        "g3_confirmation": 1.6238701343536377,
+        "metrics_calculation": 1.6238701343536377,
+        "total": 1.6398708820343018
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.25,
+          "recall": 0.16666666666666666,
+          "f1": 0.2,
+          "true_positives": 1,
+          "false_positives": 3,
+          "false_negatives": 5
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "true_positives": 4,
+          "false_positives": 0,
+          "false_negatives": 2
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.25,
+          "recall": 0.16666666666666666,
+          "f1": 0.2,
+          "true_positives": 1,
+          "false_positives": 3,
+          "false_negatives": 5
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "true_positives": 4,
+          "false_positives": 0,
+          "false_negatives": 2
+        }
+      }
+    },
+    {
+      "filename": "de3a5730-9a7e-49e9-bbf8-885699b0e851.txt",
+      "bert_entities_count": 8,
+      "confirmed_entities_count": 7,
+      "reference_entities_count": 5,
+      "g3_queries_count": 8,
+      "times": {
+        "bert_extraction": 0.027009248733520508,
+        "g3_confirmation": 3.0012128353118896,
+        "metrics_calculation": 3.0012128353118896,
+        "total": 3.029231071472168
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 8,
+          "false_negatives": 5
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 8,
+          "false_negatives": 5
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 7,
+          "false_negatives": 5
+        },
+        "relaxed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 7,
+          "false_negatives": 5
+        }
+      }
+    },
+    {
+      "filename": "63ce664c-eacf-4c3e-ab90-fba388b92924.txt",
+      "bert_entities_count": 2,
+      "confirmed_entities_count": 1,
+      "reference_entities_count": 2,
+      "g3_queries_count": 2,
+      "times": {
+        "bert_extraction": 0.011482477188110352,
+        "g3_confirmation": 0.6806323528289795,
+        "metrics_calculation": 0.6806323528289795,
+        "total": 0.6931130886077881
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        }
+      }
+    },
+    {
+      "filename": "1d5115f1-f5f0-4294-8bf3-4d55b87b9e27.txt",
+      "bert_entities_count": 2,
+      "confirmed_entities_count": 2,
+      "reference_entities_count": 2,
+      "g3_queries_count": 2,
+      "times": {
+        "bert_extraction": 0.016126632690429688,
+        "g3_confirmation": 0.6731483936309814,
+        "metrics_calculation": 0.6731483936309814,
+        "total": 0.6892750263214111
+      },
+      "bert_only": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "bert_g3": {
+        "strict": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "true_positives": 0,
+          "false_positives": 2,
+          "false_negatives": 2
+        },
+        "relaxed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 2,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      }
+    }
+  ]
+}
